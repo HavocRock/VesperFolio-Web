@@ -2,7 +2,7 @@
 
 Private document workshop. Turn images into PDF and image-based Word documents with local processing.
 
-**Development pre-release.** v2.3.2 adds the simple footer signature “With Vesper”; detailed credits remain in the repository documentation. The application script matches tested v2.3. A subsequently supplied v2.3.2 APK was checked for embedded-source identity, manifest permissions, APK v2 signature integrity, and the structure of locally supplied sample exports. These checks do not replace full device acceptance. Final public release and redistribution rights remain subject to the licensing/provenance review described in LICENSING.md. See QA.md and RELEASE-CHECKLIST.md.
+**Development pre-release.** v2.3.2 adds the simple footer signature “With Vesper”; detailed credits remain in the repository documentation. The application script matches tested v2.3. A subsequently supplied v2.3.2 APK was checked for embedded-source identity, manifest permissions, APK v2 signature integrity, and the structure of locally supplied sample exports. These checks do not replace full device acceptance. Source is now licensed under MIT as documented in LICENSING.md; public release readiness still requires the recorded QA and packaging checks. See QA.md and RELEASE-CHECKLIST.md.
 
 ## Why we built VesperFolio
 
@@ -40,18 +40,22 @@ Optional existing `TurtleNative.save`, `.print` and `.exit` hooks are preserved.
 
 - `baseline/`: unchanged checked v2.1 and the preceding v2.2, v2.3 and v2.3.1 web-apps, with SHA-256 records. Existing v2.2 deliverables are preserved separately.
 - `index.html`: current v2.3.2 source and usable app.
-- Policy, attribution, change and QA documents.
+- MIT `LICENSE`, policy, attribution, change and QA documents.
 - `tests/`: reproducible development scripts and **text-only** historical QA evidence. Generated documents and rendered page images have been removed from this public-source candidate.
 - `tools/release_guard.py`: mandatory pre-publish ZIP preflight, including rejection of document files and generated images.
 - `RELEASE-NOTES-v2.3.2.md`, `RELEASE-CHECKLIST.md`, `GITHUB-UPLOAD.md`: release instructions and outstanding gates.
 
 ## GitHub
 
-Review the provenance and license decision first. Then upload this **clean source directory** to the intended repository or development branch. If a public GitHub release is approved, mark it **v2.3.2 development pre-release**. No repository was created or published during this preparation. See GITHUB-UPLOAD.md. GitHub Pages can serve `index.html`, but local download remains the reliable offline option. Private export samples, generated documents and build logs are not part of this package.
+The source is hosted in the [VesperFolio-Web repository](https://github.com/HavocRock/VesperFolio-Web). A public release, when approved, should be marked **v2.3.2 development pre-release**, not a fully tested Android release. A downloaded local copy remains the reliable offline option. Private export samples, generated documents and build logs are not in this repository.
 
-A redistribution license has not been established from the supplied provenance. See `LICENSING.md` before describing the project as open source or granting reuse rights.
+The project is offered under the [MIT License](LICENSE). See [LICENSING.md](LICENSING.md) and [ATTRIBUTION.md](ATTRIBUTION.md) for provenance and contributions. Rebuild the release archive from the current commit before publication; earlier ZIPs predate this licensing update.
 
 We start right, we stay right.
+
+## License
+
+The code is offered under the [MIT License](LICENSE), Copyright (c) 2026 HavocRock. Commercial use and closed-source derivatives are permitted. Redistributors must retain the required copyright and permission notice; publishing modifications is optional. See [LICENSING.md](LICENSING.md) for rights and provenance qualifications.
 
 ## Contributions and development
 

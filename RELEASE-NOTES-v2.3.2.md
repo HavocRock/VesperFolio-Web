@@ -20,4 +20,4 @@ The v2.3.2 application script matches v2.3, whose developer-simulation and maint
 
 Development pre-release; up to 24 pages, a 24-million-active-pixel budget, 35 MB input-file limit, and 2200-pixel processed image limit. Content is held for the current session; export before closing. DOCX uses images, not editable text. Browser or Android wrapper behaviour varies; see `README.md`, `QA.md`, `PRIVACY.md` and `SECURITY.md`.
 
-**Source licensing and provenance review remain open**, as described in `LICENSING.md`. Do not describe this as an established open-source license. Any experimental Android APK should be distributed as a clearly labelled test build until its stable package identity, signing-key custody and device QA are resolved.
+**Source license:** MIT, Copyright (c) 2026 HavocRock; see `LICENSE`, `LICENSING.md`, and `ATTRIBUTION.md` for terms, provenance and contributors. This does not replace device QA or establish independently verified originality. Any experimental Android APK should be distributed as a clearly labelled test build until its stable package identity, signing-key custody and device QA are resolved.

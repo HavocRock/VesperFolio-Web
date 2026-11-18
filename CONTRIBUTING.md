@@ -2,6 +2,10 @@
 
 Read the project documentation and understand the existing behaviour before changing or distributing a build. Contributions are welcome from learners and experienced developers. Careful review and practical testing are part of the work.
 
+## Licensing contributions
+
+This project is licensed under [MIT](LICENSE). Submit only material you have rights to license under MIT-compatible terms, identify outside code and its license, and preserve required legal notices. Contributions included in this project are intended to be distributed under MIT unless otherwise expressly agreed. The development credits in [ATTRIBUTION.md](ATTRIBUTION.md) are a record of contributions, not additional MIT conditions.
+
 ## Before making a change
 
 Read README.md, QA.md, PRIVACY.md, SECURITY.md, TERMS.md, ATTRIBUTION.md and LICENSING.md. Check the recorded limitations and distinguish simulated tests, maintainer device reports and untested behaviour. Preserve a known working version and make changes separately. Use only images and test data you are authorised to process.
