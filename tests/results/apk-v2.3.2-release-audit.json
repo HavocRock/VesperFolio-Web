@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-18",
+  "version": "v2.3.2",
+  "evidence_type": "locally supplied APK and private samples, static/structural inspection only",
+  "app_source_sha256": "56bd4334d7b86442aa7e190cdfc282f1ed6dd062ee8fe7e8e99fbf1cf6e9ce4a",
+  "apk_sha256": "ac5bf617165d680a503d415cbd8e7223df53d64f846f8b9b54d41ada72c38448",
+  "android_v2_signature_verified": true,
+  "permissions_requested": [],
+  "private_export_structure": "PDF and image-based DOCX: two pages/images, valid formats; same image bytes in page order",
+  "private_export_files_bundled": false,
+  "public_user_documents_bundled": false,
+  "not_verified": "complete on-device v2.3.2 functional regression, physical print, universal Word/Google Docs behaviour, stable Android update identity"
+}

@@ -1,0 +1,5 @@
+{
+  "pdf": "2 pages parsed and rasterised; 1 image per page",
+  "docx": "ZIP CRC, all XML, 2 embedded images, 2 sections, positive dimensions passed",
+  "not_tested": "Word/Google Docs rendering and physical printing"
+}

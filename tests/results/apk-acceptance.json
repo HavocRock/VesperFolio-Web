@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-18",
+  "evidence_type": "maintainer functional report plus independent local file inspection",
+  "maintainer_result": "All functions worked without any issues",
+  "build_device": "realme RMX5250; Android 16 / API 36 (from build log)",
+  "converter": "0.2.4 QA",
+  "apk_sha256": "2ae774d5ed540c5fbb601128e60af92ce6e77db30c2749c2d026d23900e6ebf3",
+  "apk_zip_integrity": "passed",
+  "embedded_webapp_sha256": "c027f9df6c7fe178a9e4abb57296b5ff5e16204d90b256f970b7c327b36f9842",
+  "embedded_source_matches_delivered_v23": true,
+  "pdf": "2 A4 pages; one image per page; parsed without repair; all pages rendered and inspected",
+  "docx": "ZIP and XML valid; 2 images; rendered as 2 pages; all pages inspected",
+  "pdf_docx_image_bytes_and_order": "identical",
+  "apk_permissions_reported_by_builder": [
+    "android.permission.VIBRATE",
+    "android.permission.POST_NOTIFICATIONS"
+  ],
+  "release_cleanup": "Disable unused builder vibration and notification permissions before public APK release unless intentionally required by a wrapper feature",
+  "not_independently_verified": [
+    "APK signature validation",
+    "on-device execution",
+    "physical paper output",
+    "full wrapper security review"
+  ],
+  "private_exports_and_apk_bundled": false
+}

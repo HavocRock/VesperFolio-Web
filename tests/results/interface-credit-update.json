@@ -1,0 +1,11 @@
+{
+  "version": "v2.3.1",
+  "date": "2026-11-18",
+  "change": "interface contribution credits removed; credits retained in documentation",
+  "application_script_identical_to_v23": true,
+  "v23_source_sha256": "c027f9df6c7fe178a9e4abb57296b5ff5e16204d90b256f970b7c327b36f9842",
+  "current_source_sha256": "861bdf2e4ae6adc0b35191a870584721a3730f050bb7b9afe52526d297ae1a61",
+  "runtime_checks_rerun": false,
+  "current_phone_or_apk_test": false,
+  "prior_test_evidence_version": "v2.3"
+}

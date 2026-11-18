@@ -1,0 +1,10 @@
+{
+  "version": "v2.3.2",
+  "date": "2026-11-18",
+  "footer_signature": "With Vesper",
+  "detailed_credits_location": "ATTRIBUTION.md",
+  "application_script_identical_to_v231_and_v23": true,
+  "source_sha256": "56bd4334d7b86442aa7e190cdfc282f1ed6dd062ee8fe7e8e99fbf1cf6e9ce4a",
+  "runtime_checks_rerun": false,
+  "new_apk_or_device_test": false
+}

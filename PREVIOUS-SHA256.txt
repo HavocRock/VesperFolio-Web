@@ -1,0 +1,3 @@
+a38e21470682f9cff46226326d4522acb02e68cb804e54766fc6a02fd750e469  baseline/VesperFolio-Web-v2.2.html
+c027f9df6c7fe178a9e4abb57296b5ff5e16204d90b256f970b7c327b36f9842  baseline/VesperFolio-Web-v2.3.html
+861bdf2e4ae6adc0b35191a870584721a3730f050bb7b9afe52526d297ae1a61  baseline/VesperFolio-Web-v2.3.1.html
