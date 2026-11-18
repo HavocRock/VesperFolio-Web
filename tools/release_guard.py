@@ -5,8 +5,8 @@ from pathlib import Path
 from zipfile import ZipFile
 
 BAD={'.pdf','.docx','.doc','.odt','.rtf','.png','.jpeg','.jpg','.gif','.webp','.bmp','.tif','.tiff','.heic','.avif','.apk','.aab','.jks','.keystore','.p12','.pem','.key'}
-ALLOWED={'.html','.md','.txt','.py','.cjs','.json','.gitignore'}
-REQUIRED={'index.html','README.md','QA.md','PRIVACY.md','SECURITY.md','TERMS.md','ATTRIBUTION.md','LICENSING.md','CONTRIBUTING.md','CHANGELOG.md','RELEASE-NOTES-v2.3.2.md','RELEASE-CHECKLIST.md','GITHUB-UPLOAD.md','BASELINE-SHA256.txt','PREVIOUS-SHA256.txt','tools/release_guard.py'}
+ALLOWED={'.html','.md','.txt','.py','.cjs','.json','.gitignore','license'}
+REQUIRED={'index.html','README.md','QA.md','PRIVACY.md','SECURITY.md','TERMS.md','ATTRIBUTION.md','LICENSING.md','LICENSE','SOURCE-SHA256.txt','CONTRIBUTING.md','CHANGELOG.md','RELEASE-NOTES-v2.3.2.md','RELEASE-CHECKLIST.md','GITHUB-UPLOAD.md','BASELINE-SHA256.txt','PREVIOUS-SHA256.txt','tools/release_guard.py'}
 ROOT='VesperFolio-Web-v2.3.2/'
 
 def fail(s): raise SystemExit('FAIL: '+s)
@@ -35,6 +35,17 @@ def check(zippath):
                 expect,ref=line.split(None,1)
                 if ref not in files:fail('missing baseline: '+ref)
                 if hashlib.sha256(files[ref]).hexdigest()!=expect:fail('baseline hash mismatch: '+ref)
+        recorded={}
+        for line in files['SOURCE-SHA256.txt'].decode('utf-8').splitlines():
+            if not line.strip():continue
+            expect,ref=line.split(None,1)
+            if ref in recorded:fail('duplicate manifest item: '+ref)
+            recorded[ref]=expect
+        if set(recorded)!=(set(files)-{'SOURCE-SHA256.txt'}):
+            fail('manifest members do not match ZIP members')
+        for ref,expect in recorded.items():
+            if hashlib.sha256(files[ref]).hexdigest()!=expect:
+                fail('source SHA-256 mismatch: '+ref)
         if b'With Vesper' not in app:fail('footer signature missing')
         if not b"connect-src 'none'" in app: fail('network-restrictive CSP missing')
         return len(files),sha

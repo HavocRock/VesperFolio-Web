@@ -16,13 +16,13 @@ This checklist separates **verified**, **reported**, and **still open** facts. D
 
 ## To complete before claiming a stable public release
 
-- [ ] Confirm ownership/provenance of the original v2.1 work and select a license if public reuse is intended (`LICENSING.md`).
+- [x] Record the project's reported development origins and Claude's generation statement, and adopt MIT (`LICENSE` and `LICENSING.md`). Rights/third-party uncertainty is documented; this is not an independent non-infringement certification.
 - [ ] Test the exact v2.3.2 application in Chrome/Android and desktop browser at different viewport sizes, including Zoom and focus controls.
 - [ ] Independently repeat the complete Android APK test matrix: import, order, crop/rotations, fine tune, preview, Undo, Clear, Discard, PDF, DOCX, print, Exit, offline, portrait/landscape, large/invalid inputs and lifecycle/resume.
 - [ ] If publicly releasing APKs: choose a permanent application ID, display label and long-term signing key; document upgrade/backup strategy; inspect the wrapper and remove unnecessary optional camera/mic feature declarations if appropriate.
 - [ ] Confirm that exported files open and print on representative target viewers and devices; test memory limits and interruptions.
 - [ ] Decide whether this should be a development pre-release now or remain private while these checks are outstanding.
-- [ ] Re-run `python tools/release_guard.py <release-zip>` on the exact candidate immediately before upload.
+- [ ] Build a **new** release ZIP from the current MIT-licensed commit, verify `SOURCE-SHA256.txt`, and re-run `python tools/release_guard.py <release-zip>` on the exact candidate immediately before upload. Older ZIPs predate the new LICENSE.
 - [ ] Confirm **no private/generated documents, source photos, rendered previews, build logs, credentials or signing keys** are selected for upload.
 
 Keep the main source ZIP and Android experimental APK as **separate** assets. Do not add private document evidence to either one.
